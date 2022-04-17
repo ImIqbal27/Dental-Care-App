@@ -13,18 +13,19 @@ const Service = ({ service }) => {
         //     <button>Book For - {name}</button>
 
         // </div>
-        <div className='service-container '>
+        <div className='service-container  '>
             <Card>
-                <Card.Img variant="top" src={img} style={{ width: '350px', }} />
+                <Card.Img variant="top" src={img} style={{ width: '320px', padding: '4px' }} className='mt-2' />
                 <Card.Body>
-                    <Card.Title>{name}</Card.Title>
-                    <Card.Text>
+                    <Card.Title> <b>{name}</b> </Card.Title>
+                    <Card.Text style={{padding:'5px'}}>
                         {description}
                     </Card.Text>
                     <Card.Title> Price: ${price}</Card.Title>
                 </Card.Body>
                 <Card.Footer>
-                    <small className="text-muted">Book for {name}</small>
+                    <small className="text-muted "> Read More...</small>
+
                 </Card.Footer>
             </Card>
         </div>

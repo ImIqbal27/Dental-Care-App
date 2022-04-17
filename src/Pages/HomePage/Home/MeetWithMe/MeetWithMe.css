@@ -1,0 +1,26 @@
+.meet-section {
+    /* margin: 20px; */
+    padding: 10px;
+    display: flex;
+    background-color: #B4ECE3;
+
+
+}
+
+.dr-img-section {
+    border-radius: 44px;
+}
+
+.dr-description-section {
+    padding: 12px;
+    /* color: white; */
+}
+
+/* make responsive */
+@media only screen and (max-width:576px) {
+    .meet-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

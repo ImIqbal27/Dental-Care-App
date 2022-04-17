@@ -1,5 +1,7 @@
-.service-container{
-    border: 1px solid rgb(105, 135, 135);
+.service-container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 310px;
+    border: 1px solid rgb(251, 255, 255);
     border-radius: 10px;
     padding-bottom: 10px;
     text-align: center;
