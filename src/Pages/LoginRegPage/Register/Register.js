@@ -3,12 +3,23 @@ import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
+    const handleRegister = event => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+    }
     return (
         <div>
 
             <div className='container  w-50 mx-auto mb-5 pb-5'>
                 <h2 className='text-center mt-2'>Please Register</h2>
-                <Form >
+                <Form onSubmit={handleRegister} >
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label> Your Name</Form.Label>
+                        <Form.Control type="text" placeholder="Enter Name" required />
+
+                    </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" required />
