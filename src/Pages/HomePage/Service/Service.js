@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Service.css';
 
 const Service = ({ service }) => {
@@ -23,7 +23,10 @@ const Service = ({ service }) => {
                     <Card.Title> Cost: ${price}</Card.Title>
                 </Card.Body>
                 <Card.Footer>
-                    <small onClick={() => navigateToServiceDetail(id)} className=" "> Go For...</small>
+                   
+                        <small onClick={() => navigateToServiceDetail(id)}> Go For...</small>
+                  
+
 
                 </Card.Footer>
             </Card>

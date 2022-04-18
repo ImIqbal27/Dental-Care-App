@@ -3,9 +3,9 @@ import notFound from '../../../images/notfound.webp.jpg'
 
 const Notfound = () => {
     return (
-        <div className='w-100'>
+        <div>
 
-            <img src={notFound} alt="" />
+            <img className='w-100' src={notFound} alt="" />
         </div>
     );
 };

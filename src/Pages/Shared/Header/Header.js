@@ -26,6 +26,9 @@ const Header = () => {
                         <Nav.Link as={Link} to="getAppointed">
                             <button>Get Appointed</button>
                         </Nav.Link>
+                        <Nav.Link as={Link} to="login">
+                            Login
+                        </Nav.Link>
 
                     </Nav>
                 </Navbar.Collapse>
