@@ -1,9 +1,16 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './Service.css';
 
 const Service = ({ service }) => {
-    const { name, price, description, img } = service;
+    const { id, name, price, description, img } = service;
+    const navigate = useNavigate();
+    const navigateToServiceDetail = id => {
+        console.log(id);
+        navigate(`/service/${id}`)
+
+    }
     return (
         <div className='service-container  '>
             <Card>
@@ -16,7 +23,7 @@ const Service = ({ service }) => {
                     <Card.Title> Cost: ${price}</Card.Title>
                 </Card.Body>
                 <Card.Footer>
-                    <small className=" "> Read More...</small>
+                    <small onClick={() => navigateToServiceDetail(id)} className=" "> Go For...</small>
 
                 </Card.Footer>
             </Card>
