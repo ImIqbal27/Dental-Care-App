@@ -1,10 +1,11 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
     return (
-        <div>
-            <h2> <small>Copyright &copy; </small> </h2>
-        </div>
+        <footer className='footer-section'>
+            <p className='text-center mt-2  text-white'> <small>Copyright &copy;  2022 </small> </p>
+        </footer>
     );
 };
 
